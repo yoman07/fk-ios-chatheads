@@ -22,7 +22,7 @@
     CGRect bubbleFrame = CGRectMake(0,
                                     self.pointerSize,
                                     [[UIScreen mainScreen] bounds].size.width,
-                                    [[UIScreen mainScreen] bounds].size.height - DEFAULT_CHAT_HEAD_FRAME.size.height - 10.0);
+                                    [[UIScreen mainScreen] bounds].size.height - DEFAULT_CHAT_HEAD_FRAME.size.height - 30.0);
     return bubbleFrame;
 }
 
