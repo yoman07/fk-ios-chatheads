@@ -913,7 +913,7 @@ static FCChatHeadsController *_chatHeadsController;
     [self dismissPopover];
     
     CGRect frame = [[[[[UIApplication sharedApplication] delegate] window] screen] bounds];
-    frame.size.height -= CGRectGetMaxY(self.activeChatHead.frame);
+    frame.size.height -= CGRectGetMaxY(self.activeChatHead.frame) + 8.0;
     
     UIView *contentView = nil;
     if (self.datasource && [self.datasource respondsToSelector:@selector(chatHeadsController:viewForPopoverForChatHeadWithChatID:)])
